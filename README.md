@@ -60,14 +60,11 @@ recipe-chatbot/
 
 2. Install dependencies
     ```bash
-    # Create and activate virtual environment
-    uv venv
+    # Create venv and install dependencies
+    uv sync
 
     # Activate the virtual env
     source ./venv/bin/activate
-
-    # Install dependencies
-    uv sync
     ```
 
 3.  **Configure Environment Variables (`.env` file)**

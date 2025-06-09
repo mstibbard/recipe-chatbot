@@ -179,6 +179,15 @@ wheels = [
 ]
 
 [[package]]
+name = "docstring-parser"
+version = "0.16"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/08/12/9c22a58c0b1e29271051222d8906257616da84135af9ed167c9e28f85cb3/docstring_parser-0.16.tar.gz", hash = "sha256:538beabd0af1e2db0146b6bd3caa526c35a34d61af9fd2887f3a8a27a739aa6e", size = 26565, upload-time = "2024-03-15T10:39:44.419Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d5/7c/e9fcff7623954d86bdc17782036cbf715ecab1bec4847c008557affe1ca8/docstring_parser-0.16-py3-none-any.whl", hash = "sha256:bf0a1387354d3691d102edef7ec124f219ef639982d096e26e3b60aeffa90637", size = 36533, upload-time = "2024-03-15T10:39:41.527Z" },
+]
+
+[[package]]
 name = "fastapi"
 version = "0.115.12"
 source = { registry = "https://pypi.org/simple" }
@@ -515,6 +524,21 @@ wheels = [
 ]
 
 [[package]]
+name = "mirascope"
+version = "1.24.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "docstring-parser" },
+    { name = "jiter" },
+    { name = "pydantic" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/93/6c/cdac9263306d52bc09dd49ad4ead3b9a030c654d79957bd414715de3d073/mirascope-1.24.0.tar.gz", hash = "sha256:9dffb530460bb312a7d775b34ff93318faa2a4668103b21bb13c5db88bfcad35", size = 604041, upload-time = "2025-05-18T16:23:18.765Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/25/1f/6ca3b2da15c22db051b5525031a1822e11e9d5131f5836d957ae54733a49/mirascope-1.24.0-py3-none-any.whl", hash = "sha256:097f50efd75520e5c174e147c38fc2127c9d2c5f05a5b3325d6be8106a1a185d", size = 370670, upload-time = "2025-05-18T16:23:17.331Z" },
+]
+
+[[package]]
 name = "multidict"
 version = "6.4.4"
 source = { registry = "https://pypi.org/simple" }
@@ -768,6 +792,7 @@ dependencies = [
     { name = "fastapi" },
     { name = "httpx" },
     { name = "litellm" },
+    { name = "mirascope" },
     { name = "python-dotenv" },
     { name = "rich" },
     { name = "uvicorn" },
@@ -778,6 +803,7 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.115.12" },
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "litellm", specifier = ">=1.70.2" },
+    { name = "mirascope", specifier = ">=1.24.0" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
     { name = "rich", specifier = ">=14.0.0" },
     { name = "uvicorn", specifier = ">=0.34.2" },

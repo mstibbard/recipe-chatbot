@@ -8,6 +8,7 @@ dependencies = [
   "fastapi>=0.115.12",
   "httpx>=0.28.1",
   "litellm>=1.70.2",
+  "mirascope>=1.24.0",
   "python-dotenv>=1.1.0",
   "rich>=14.0.0",
   "uvicorn>=0.34.2",
